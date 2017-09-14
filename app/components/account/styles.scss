@@ -1,0 +1,95 @@
+@import '../../variable.scss';
+
+.component-account .acFooter {
+  height: 30px;
+  @extend .flex;
+  justify-content: space-between;
+  .ac-1,.ac-2 { @extend .flex; height: 100%; }
+  img { margin: 0 10px; cursor: pointer; }
+  .border { width: 2px; height: 100%; background-color: #DDD; margin: 0 10px; }
+}
+
+.component-account .acHeader {
+  @extend .flex;
+  position: relative;
+  .btn-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    color: $color-d-opa;
+  }
+  .ac-icon {
+    @extend .flex;
+    .user-pic { 
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      z-index: 2;
+      display: inline-block;
+    }
+    .facebook-pic {
+      @extend .user-pic;
+      z-index: 1;
+      color: #FFF;
+      font-size: 25px;
+      font-weight: 600;
+      transform: translateX(-6px);
+      background-color: $color-facebook;
+      svg { transform: translateX(6px) }
+    }
+  }
+  .ac-name {
+    width: 100%;
+    .name { color: $color-facebook; font-weight: 600; font-size: 16px;  }
+    small { color: $color-d-opa; font-size: 13px; }
+  }
+
+  @include respond-to(mobile) { 
+    flex-wrap: wrap;
+    .ac-name {
+      padding-top: 10px;
+      .name { font-size: 13px; }
+      small {  font-size: 10px; }
+    }
+  }
+}
+
+.component-account .acBody {
+  padding: 10px 0;
+  h5 { font-weight: 700; }
+  p { color: $color-d-opa; font-size: 13px; }
+  img { margin-right: 15px; transform: translateY(-2px); cursor: pointer; }
+  .neo-status {
+    @extend .flex;
+    color: $color-d-opa;
+    .labels { font-size: 13px; margin-left: 10px; }
+    .items {  min-width: 70px; }
+    .items-hr { width: 100%; height: 1px; background-color: #DDD; }
+    margin-bottom: 10px;
+  }
+  .status {
+    display: flex;
+    align-items: baseline;
+    .ac-1 {
+      width: 150px;
+    }
+    .ac-2 {
+      width: 100%;
+    }
+  }
+  .chip { display: inline-block !important; margin: 4px !important; }
+
+  @include respond-to(mobile) {
+    h5 { font-size: 0.85em; }
+    p { font-size: 0.75em; }
+    .status {
+      flex-wrap: wrap;
+      justify-content: center;
+      .ac-1, .ac-2 { width: auto; padding: 5px 0; }
+
+      border-bottom: 1px solid #DDD;
+    }
+    .colon { display: none; }
+  }
+}
