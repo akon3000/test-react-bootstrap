@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,600,700);/* devices screen */
+.colon {
+  font-size: 1.8em;
+  margin-right: 10px; }
+
+.flex, .component-account .acFooter, .component-account .acFooter .ac-1, .component-account .acFooter .ac-2, .component-account .acHeader, .component-account .acHeader .ac-icon, .component-account .acBody .neo-status {
+  display: flex;
+  align-items: center; }
+
+.component-account .acFooter {
+  height: 30px;
+  justify-content: space-between; }
+  .component-account .acFooter .ac-1, .component-account .acFooter .ac-2 {
+    height: 100%; }
+  .component-account .acFooter img {
+    margin: 0 10px;
+    cursor: pointer; }
+  .component-account .acFooter .border {
+    width: 2px;
+    height: 100%;
+    background-color: #DDD;
+    margin: 0 10px; }
+
+.component-account .acHeader {
+  position: relative; }
+  .component-account .acHeader .btn-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5); }
+  .component-account .acHeader .ac-icon .user-pic, .component-account .acHeader .ac-icon .facebook-pic {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    z-index: 2;
+    display: inline-block; }
+  .component-account .acHeader .ac-icon .facebook-pic {
+    z-index: 1;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    transform: translateX(-6px);
+    background-color: #4267B2; }
+    .component-account .acHeader .ac-icon .facebook-pic svg {
+      transform: translateX(6px); }
+  .component-account .acHeader .ac-name {
+    width: 100%; }
+    .component-account .acHeader .ac-name .name {
+      color: #4267B2;
+      font-weight: 600;
+      font-size: 16px; }
+    .component-account .acHeader .ac-name small {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 13px; }
+  @media only screen and (max-width: 490px) {
+    .component-account .acHeader {
+      flex-wrap: wrap; }
+      .component-account .acHeader .ac-name {
+        padding-top: 10px; }
+        .component-account .acHeader .ac-name .name {
+          font-size: 13px; }
+        .component-account .acHeader .ac-name small {
+          font-size: 10px; } }
+
+.component-account .acBody {
+  padding: 10px 0; }
+  .component-account .acBody h5 {
+    font-weight: 700; }
+  .component-account .acBody p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px; }
+  .component-account .acBody img {
+    margin-right: 15px;
+    transform: translateY(-2px);
+    cursor: pointer; }
+  .component-account .acBody .neo-status {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px; }
+    .component-account .acBody .neo-status .labels {
+      font-size: 13px;
+      margin-left: 10px; }
+    .component-account .acBody .neo-status .items {
+      min-width: 70px; }
+    .component-account .acBody .neo-status .items-hr {
+      width: 100%;
+      height: 1px;
+      background-color: #DDD; }
+  .component-account .acBody .status {
+    display: flex;
+    align-items: baseline; }
+    .component-account .acBody .status .ac-1 {
+      width: 150px; }
+    .component-account .acBody .status .ac-2 {
+      width: 100%; }
+  .component-account .acBody .chip {
+    display: inline-block !important;
+    margin: 4px !important; }
+  @media only screen and (max-width: 490px) {
+    .component-account .acBody h5 {
+      font-size: 0.85em; }
+    .component-account .acBody p {
+      font-size: 0.75em; }
+    .component-account .acBody .status {
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: 1px solid #DDD; }
+      .component-account .acBody .status .ac-1, .component-account .acBody .status .ac-2 {
+        width: auto;
+        padding: 5px 0; }
+    .component-account .acBody .colon {
+      display: none; } }
+body {
+  margin: 0;
+  background-color: #F1F1F1;
+  font-family: 'Montserrat', sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+input,
+button {
+  font-family: 'Montserrat', sans-serif; }
+
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+  background-color: Transparent; }
+
+.container {
+  padding: 50px; }
+
+.row {
+  margin: 13px 0; }
